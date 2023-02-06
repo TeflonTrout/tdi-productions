@@ -1,12 +1,12 @@
 .primary {
     background-color: rgb(144, 0, 0);
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 10px 15px;
     margin: 0;
 }
 
 .primary h1 {
-    font-size: 18px !important;
+    font-size: 14px !important;
 }
 
 .auto {

@@ -16,6 +16,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Carousel />
+      <div className={styles.hero}>
+        <h1>Latest Releases</h1>
+        
+      </div>
     </>
   )
 }

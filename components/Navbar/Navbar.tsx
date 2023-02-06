@@ -13,7 +13,7 @@ const Navbar = () => {
       </div>
       <div className={styles.logoContainer}>
         <h1>TDI</h1>
-        {/* <Image src="/tdiLogo.png" alt="tdi productions" className={styles.logo} fill/> */}
+        {/* <Image src="/tdiTransparent.png" alt="tdi productions" className={styles.logo} fill/> */}
       </div>
       <div className={styles.socialsContainer}>
         <Button text="Contact" color="primary" width="auto"/>
