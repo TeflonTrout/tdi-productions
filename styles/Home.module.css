@@ -12,6 +12,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
-  
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.hero .cardGrid {
+  display: grid;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 30px 10px 30px;
+  grid-gap: 20px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 10px));
 }

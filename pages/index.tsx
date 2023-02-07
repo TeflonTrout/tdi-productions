@@ -1,10 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
-import { Navbar, Carousel } from '@/components'
-
-const inter = Inter({ subsets: ['latin'] })
+import { Button, Carousel, SimpleCard } from '@/components'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -18,7 +15,14 @@ export default function Home() {
       <Carousel />
       <div className={styles.hero}>
         <h1>Latest Releases</h1>
-        
+        <div className={styles.cardGrid}>
+          <SimpleCard title="Inside the Tent" image='/thumbnails/insideTheTent.png'/>
+          <SimpleCard title="Pigs" image='/thumbnails/pigs.jpg'/>
+          <SimpleCard title="Confinement" image='/thumbnails/confinement.jpg'/>
+        </div>
+        <Link href="/films">
+          <Button text='View More' color='primary' width='auto'/>
+        </Link>
       </div>
     </>
   )
