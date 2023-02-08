@@ -1,3 +1,18 @@
+:root {
+  /* --blood-red: #7B0000;
+  --salmon: #FF98A0;
+  --jet: #333333;
+  --white: #F1F1F1;
+  --plum: #A03E99; */
+
+  /* MONOCHROMATIC TEST PALLETTE */
+  --white: #f6f6f6ff;
+  --platinum: #e8e8e8ff;
+  --jet: #333333ff;
+  --blood-red: #990100ff;
+  --light-red: #b90504ff;
+}
+
 @font-face {
   font-family: "Inter";
   src: ('https://fonts.googleapis.com/css2?family=Inter&display=swap');
@@ -8,14 +23,15 @@
   padding: 0;
   margin: 0;
   font-family: 'Inter', sans-serif;
+  color: var(--white);
 }
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background-color: rgb(37, 37, 37);
-  color: white;
+  background-color: var(--jet);
+  color: (--white);
 }
 
 body {

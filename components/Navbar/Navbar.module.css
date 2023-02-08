@@ -21,6 +21,7 @@
     }
 
     .navbar .pageLinks h1 {
+        color: var(--white);
         margin: 0px 10px;
         font-size: 18px;
         width: auto;
@@ -29,7 +30,7 @@
     }
 
     .navbar .pageLinks h1:hover {
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid var(--white);
         transition: .15s ease-in;
         transform: scale(1.1);
     }
@@ -78,6 +79,7 @@
     }
 
     .navbar .pageLinks h1 {
+        color: var(--white);
         margin: 0px 10px;
         font-size: 18px;
         width: auto;
@@ -86,7 +88,7 @@
     }
 
     .navbar .pageLinks h1:hover {
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid var(--white);
         transition: .15s ease-in;
         transform: scale(1.1);
     }
@@ -103,6 +105,10 @@
         max-height: 50px;
         position: relative !important;
         object-fit: cover;
+    }
+
+    .navbar .logoContainer h1 {
+        color: var(--white);
     }
 
     .navbar .socialsContainer {

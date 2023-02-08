@@ -1,8 +1,10 @@
 .primary {
-    background-color: rgb(144, 0, 0);
+    color: var(--white);
+    background-color: var(--blood-red);
     border-radius: 10px;
     padding: 10px 15px;
     margin: 0;
+    cursor: pointer;
 }
 
 .primary h1 {
