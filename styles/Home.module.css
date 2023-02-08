@@ -29,3 +29,11 @@
   align-content: center;
   grid-template-columns: repeat(auto-fit, minmax(250px, 10px));
 }
+
+.carousel {
+  margin-top: 0px;
+  top: 0;
+  position: relative;
+  z-index: 1;  
+  max-width: 1920px;
+}
