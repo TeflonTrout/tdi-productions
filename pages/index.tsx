@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
-import { Button, Carousel, SimpleCard } from '@/components'
+import { Button, Carousel, Footer, SimpleCard } from '@/components'
 import Link from 'next/link'
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Carousel />
-      <div className={styles.hero}>
+      <div className={styles.releaseHero}>
         <h1>Latest Releases</h1>
         <div className={styles.cardGrid}>
           <SimpleCard title="Inside the Tent" image='/thumbnails/insideTheTent.png'/>
@@ -24,6 +24,18 @@ export default function Home() {
           <Button text='View More' color='primary' width='auto'/>
         </Link>
       </div>
+      <div className={styles.aboutHero}>
+        <div className={styles.logoContainer}>
+          <img src="/tdiLogo.png" alt="tdi productions"/>
+        </div>
+        <div className={styles.container}>
+          <h2>TDI Productions</h2>
+          <h1>Twenty Dollar Insurance</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex repellat perspiciatis vero facere aspernatur ipsum adipisci fugiat non delectus ullam tempore saepe optio soluta, laborum eveniet nihil sequi velit sed?</p>
+          <Button text="View Films" color='primary' width='auto' />
+        </div>
+      </div>
+      <Footer />
     </>
   )
 }
