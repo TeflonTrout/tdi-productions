@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './Button.module.css'
 
 interface ButtonProps {
@@ -5,6 +6,7 @@ interface ButtonProps {
     color: "primary" | "secondary" | "tertiary" | "disabled";
     width: "xl" | "lg" | "md" | "sm" | "auto"
     external?: boolean;
+    url?: string;
 }
 
 const Button = (props:ButtonProps) => {
@@ -13,7 +15,10 @@ const Button = (props:ButtonProps) => {
 
     return (
         <div className={`${styles[buttonType]} ${styles[buttonWidth]}`}>
-            <h1>{props.text}</h1>
+            {props.external && props.url 
+            ? <Link href={props.url} target="_blank" rel='noreferrer'><h1 className={styles.text}>{props.text}</h1></Link>
+            : <h1 className={styles.text}>{props.text}</h1>
+            }
         </div>
     )
 }

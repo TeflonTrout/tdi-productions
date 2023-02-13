@@ -1,0 +1,23 @@
+.filmPage {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.filmPage .heading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.filmPage .filmGrid {
+    display: grid;
+    width: 100vw;
+    grid-gap: 50px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 10px));
+}
