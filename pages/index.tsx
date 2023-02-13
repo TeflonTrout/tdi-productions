@@ -14,9 +14,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.navbar}>
+      {/* <div className={styles.navbar}>
         <Navbar />
-      </div>
+      </div> */}
       <div style={{width: '99vw', display: 'flex', justifyContent: "center"}}>
         <Carousel 
           infiniteLoop={true}
@@ -77,7 +77,6 @@ export default function Home() {
           <Button text="View Films" color='primary' width='auto' />
         </div>
       </div>
-      <Footer />
     </>
   )
 }
