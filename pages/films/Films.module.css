@@ -14,9 +14,10 @@
 
 .filmPage .filmGrid {
     display: grid;
+    padding: 0px 20px 0 20px;
     width: 100vw;
     grid-gap: 50px;
-    align-items: center;
+    align-items: revert;
     justify-items: center;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(300px, 10px));
