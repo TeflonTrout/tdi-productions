@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "./DescriptiveCard.module.css"
-import { FieldProps } from '@/pages/films'
+import { FieldProps } from '@/types'
+import Link from 'next/link'
 import { Button } from '../index'
 import Moment from "react-moment"
 
@@ -15,6 +16,9 @@ const DescriptiveCard = (props:FieldProps) => {
         <p>{props.description}</p>
         <div className={styles.buttonContainer}>
             <Button text="Watch" color="primary" width='lg' external={true} url={props.url}/>
+            <Link href={`films/${props.slug}`}>
+              <Button text="Info" color="primary" width='lg'/>
+            </Link>
         </div>
     </div>
   )

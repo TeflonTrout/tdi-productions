@@ -1,16 +1,42 @@
-import Head from 'next/head'
+import { useState, useEffect } from 'react'
 import styles from '@/styles/Home.module.css'
-import { Button, Navbar, Footer, SimpleCard } from '@/components'
+import { Button, SimpleCard } from '@/components'
 import { Carousel } from "react-responsive-carousel"
+import { getFilms } from '@/utils/utils'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Link from 'next/link'
 
-export default function Home() {
+interface FieldProps {
+  title: string;
+  thumbnail: string;
+  description: string;
+  releaseData: string;
+  url: string;
+  genres: Array<string>;
+  slug: string;
+}
+
+interface PropType {
+  films: FilmProp[];
+}
+
+interface FilmProp {
+  metadata: Object;
+  sys: Array<object>;
+  fields: FieldProps[];
+}
+
+const Home = ({ films }:PropType) => {
+  const [newFilms, setNewFilms] = useState<Array<any>>([]);
+  
+  useEffect(() => {
+    if(films !== undefined){
+      setNewFilms(films.slice(0,3))
+    }
+  }, [films])
+
   return (
     <>
-      {/* <div className={styles.navbar}>
-        <Navbar />
-      </div> */}
       <div style={{width: '99vw', display: 'flex', justifyContent: "center"}}>
         <Carousel 
           infiniteLoop={true}
@@ -52,9 +78,9 @@ export default function Home() {
       <div className={styles.releaseHero}>
         <h1>Latest Releases</h1>
         <div className={styles.cardGrid}>
-          <SimpleCard title="Inside the Tent" image='/thumbnails/insideTheTent.png'/>
-          <SimpleCard title="Pigs" image='/thumbnails/pigs.jpg'/>
-          <SimpleCard title="Confinement" image='/thumbnails/confinement.jpg'/>
+          {newFilms.map((film) => (
+            <SimpleCard key={film.fields.slug} title={film.fields.title} image={film.fields.thumbnail.fields.file.url}/>
+          ))}
         </div>
         <Link href="/films">
           <Button text='View More' color='primary' width='auto'/>
@@ -74,3 +100,10 @@ export default function Home() {
     </>
   )
 }
+
+// SERVER SIDE RENDERED DATA FETCHING
+Home.getInitialProps = async () => {
+  const data = await getFilms();
+  return {films: data};
+}
+export default Home
