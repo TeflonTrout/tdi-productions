@@ -5,10 +5,11 @@ const client = createClient({
   accessToken: "mnjS_1_KBIfWnFU6sTNydZVzJiaw7NeGa8GcgZIU5rI",
 });
 
-// Retrieve the list of film data from Contentful
+// Retrieve the list of film data from Contentful by Release Date Descending
 const getFilms = async () => {
   const response = await client.getEntries({
     content_type: 'shortFilm',
+    order: "-fields.releaseDate"
   });
 
   return response.items;

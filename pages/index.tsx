@@ -5,26 +5,7 @@ import { Carousel } from "react-responsive-carousel"
 import { getFilms } from '@/utils/utils'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Link from 'next/link'
-
-interface FieldProps {
-  title: string;
-  thumbnail: string;
-  description: string;
-  releaseData: string;
-  url: string;
-  genres: Array<string>;
-  slug: string;
-}
-
-interface PropType {
-  films: FilmProp[];
-}
-
-interface FilmProp {
-  metadata: Object;
-  sys: Array<object>;
-  fields: FieldProps[];
-}
+import { PropType } from '@/types'
 
 const Home = ({ films }:PropType) => {
   const [newFilms, setNewFilms] = useState<Array<any>>([]);
