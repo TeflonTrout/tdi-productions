@@ -74,7 +74,7 @@ const Home = ({ films }:PropType) => {
         <div className={styles.container}>
           <h2>TDI Productions</h2>
           <h1>Twenty Dollar Insurance</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex repellat perspiciatis vero facere aspernatur ipsum adipisci fugiat non delectus ullam tempore saepe optio soluta, laborum eveniet nihil sequi velit sed?</p>
+          <p>TDI Productions is a group of friends who share a passion for filmmaking and specialize in creating high-quality short horror films. With a focus on storytelling and attention to detail, we aim to leave a lasting impression on audiences with our immersive and chilling cinematic experiences.</p>
           <Button text="View Films" color='primary' width='auto' />
         </div>
       </div>
