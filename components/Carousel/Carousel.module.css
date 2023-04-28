@@ -1,0 +1,52 @@
+.carousel {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    object-fit: fill;
+    aspect-ratio: 16 / 9;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel .heroNav {
+    padding: 0 0 0 20px;
+    width: auto;
+    position: absolute;
+    bottom: 3vh;
+    left: 0px;}
+
+.carousel .heroNav h1 {
+    width: 100%;
+    white-space: nowrap;
+}
+
+.carousel .heroNav .pagination {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.carousel .heroNav .pagination .active {
+    width: 36px;
+    height: 2px;
+    display: block;
+    border-radius: 2px;
+    border-bottom: 3px solid white;
+    cursor: pointer;
+}
+
+.carousel .heroNav .pagination .item {
+    width: 36px;
+    height: 2px;
+    display: block;
+    border-radius: 2px;
+    border-bottom: 3px solid rgb(149, 149, 149);
+    cursor: pointer;
+}

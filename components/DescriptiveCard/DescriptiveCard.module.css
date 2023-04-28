@@ -1,0 +1,52 @@
+.card {
+    background-color: #101010;
+    border-radius: 10px;
+    width: 300px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 1px 1px 10px 3px var(--blood-red);
+    transition: .15s ease-in-out;
+}
+
+.card .imgContainer {
+    width: 100%;
+    /* padding: 10px; */
+}
+
+.card .imgContainer img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h1 {
+    font-size: 20px;
+}
+
+.card h2 time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px !important;
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+
+.card p {
+    width: 80%;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.card .buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: auto;
+    margin-bottom: 10px;
+}

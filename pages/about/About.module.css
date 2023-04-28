@@ -1,0 +1,77 @@
+.aboutPage {
+    margin-top: 57px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.aboutPage h1 {
+    text-decoration: underline;
+}
+
+.aboutPage span {
+    width: 90%;
+    border-bottom: 3px solid var(--white);
+}
+
+.aboutPage .heading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.aboutPage .photoGrid {
+    margin-top: 20px;
+    display: grid;
+    width: 90%;
+    justify-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 10px));
+}
+
+.hero {
+    margin-bottom: 15px;
+    width: 90%;
+    border-radius: 10px;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero .textBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.hero .textBox h1 {
+    align-self: center;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.hero img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    filter: grayscale(100%);
+    max-width: 40%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 25px 3px var(--blood-red);
+    transition: 0.15s ease-in;
+}
+
+.hero img:hover {
+    transition: 0.15s ease-in;
+    box-shadow: 1px 1px 25px 3px var(--blood-red);
+    filter: grayscale(0%);
+}
+
+.hero p {
+    font-size: 18px;
+}

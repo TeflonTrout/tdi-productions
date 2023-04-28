@@ -1,0 +1,120 @@
+@media screen and (min-width: 1920.5px) and (max-width: 3440px) {
+    .navbar {
+        z-index: 1090;
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: space-between;
+        align-items: center;
+        width: 99vw;
+        max-width: 1920px;
+        padding: 10px;
+    }
+
+    .navbar .pageLinks {
+        width: 33%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .navbar .pageLinks h1 {
+        color: var(--white);
+        margin: 0px 10px;
+        font-size: 18px;
+        width: auto;
+        cursor: pointer;
+        transition: .35s ease-out;
+    }
+
+    .navbar .pageLinks h1:hover {
+        border-bottom: 1px solid var(--white);
+        transition: .15s ease-in;
+        transform: scale(1.1);
+    }
+
+    .navbar .logoContainer {
+        display: flex;
+        justify-content: center;
+        width: 33%;
+    }
+    
+    .navbar .logoContainer .logo {
+        width: 100%;
+        height: 100%;
+        max-height: 50px;
+        position: relative !important;
+        object-fit: cover;
+    }
+
+    .navbar .socialsContainer {
+        width: 33%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1920px) {
+    .navbar {
+        z-index: 1090;
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        justify-content: space-between;
+        align-items: center;
+        width: 99vw;
+        max-width: 1920px;
+        padding: 10px;
+    }
+
+    .navbar .pageLinks {
+        width: 33%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .navbar .pageLinks h1 {
+        color: var(--white);
+        margin: 0px 10px;
+        font-size: 18px;
+        width: auto;
+        cursor: pointer;
+        transition: .35s ease-out;
+    }
+
+    .navbar .pageLinks h1:hover {
+        border-bottom: 1px solid var(--white);
+        transition: .15s ease-in-out;
+        transform: scale(1.15);
+    }
+
+    .navbar .logoContainer {
+        display: flex;
+        justify-content: center;
+        width: 33%;
+    }
+    
+    .navbar .logoContainer .logo {
+        width: 100%;
+        height: 100%;
+        max-height: 50px;
+        position: relative !important;
+        object-fit: cover;
+    }
+
+    .navbar .logoContainer h1 {
+        color: var(--white);
+    }
+
+    .navbar .socialsContainer {
+        width: 33%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
