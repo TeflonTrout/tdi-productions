@@ -1,8 +1,8 @@
 import { createClient } from 'contentful';
 
 const client = createClient({
-  space: 'a3clgdapj9b5',
-  accessToken: 'mnjS_1_KBIfWnFU6sTNydZVzJiaw7NeGa8GcgZIU5rI',
+  space: "a3clgdapj9b5",
+  accessToken: "mnjS_1_KBIfWnFU6sTNydZVzJiaw7NeGa8GcgZIU5rI",
 });
 
 // Retrieve the list of film data from Contentful
