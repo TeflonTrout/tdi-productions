@@ -1,3 +1,4 @@
+import AvatarCard from "./AvatarCard/AvatarCard"
 import Button from "./Button/Button"
 import Carousel from "./Carousel/Carousel"
 import DescriptiveCard from "./DescriptiveCard/DescriptiveCard"
@@ -6,6 +7,7 @@ import Navbar from "./Navbar/Navbar"
 import SimpleCard from "./SimpleCard/SimpleCard"
 
 export {
+    AvatarCard,
     Button,
     Carousel,
     DescriptiveCard,
