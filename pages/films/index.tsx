@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import styles from "./Films.module.css"
 import { getFilms } from '@/utils/utils'
 import { DescriptiveCard } from '@/components';
-import { FieldProps, PropType, FilmProp } from '@/types';
+import { PropType } from '@/types';
 
 const Films = ({ films }:PropType) => {
   const [filmData, setFilmData] = useState<Array<any>>([]);

@@ -5,26 +5,7 @@ import { Carousel } from "react-responsive-carousel"
 import { getFilms } from '@/utils/utils'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Link from 'next/link'
-
-interface FieldProps {
-  title: string;
-  thumbnail: string;
-  description: string;
-  releaseData: string;
-  url: string;
-  genres: Array<string>;
-  slug: string;
-}
-
-interface PropType {
-  films: FilmProp[];
-}
-
-interface FilmProp {
-  metadata: Object;
-  sys: Array<object>;
-  fields: FieldProps[];
-}
+import { PropType } from '@/types'
 
 const Home = ({ films }:PropType) => {
   const [newFilms, setNewFilms] = useState<Array<any>>([]);
@@ -93,7 +74,7 @@ const Home = ({ films }:PropType) => {
         <div className={styles.container}>
           <h2>TDI Productions</h2>
           <h1>Twenty Dollar Insurance</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex repellat perspiciatis vero facere aspernatur ipsum adipisci fugiat non delectus ullam tempore saepe optio soluta, laborum eveniet nihil sequi velit sed?</p>
+          <p>TDI Productions is a group of friends who share a passion for filmmaking and specialize in creating high-quality short horror films. With a focus on storytelling and attention to detail, we aim to leave a lasting impression on audiences with our immersive and chilling cinematic experiences.</p>
           <Button text="View Films" color='primary' width='auto' />
         </div>
       </div>
