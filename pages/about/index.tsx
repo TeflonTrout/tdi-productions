@@ -38,11 +38,11 @@ const index = () => {
         <h1 className={styles.heading}>Members</h1>
         <div className={styles.photoGrid}>
           <AvatarCard name="Michael Risnear" image ="./mike.jpg" position="Executive Director"/>
-          <AvatarCard name="Nicholas Kazousky" image ="./nicholas.jpg" position="Executive Cinematographer"/>
-          <AvatarCard name="Christian Herman" image ="./christian.jpg" position="Executive Producer"/>
-          <AvatarCard name="Chris Risnear" image ="./chris.jpg" position="Executive Author"/>
-          <AvatarCard name="J.T. Kazousky" image ="./jt.jpg" position="Head of Acting"/>
-          <AvatarCard name="Kevin Lee" image ="./kevin.jpg" position="Executive Composer"/>
+          <AvatarCard name="Nicholas Kazousky" image ="./nicholas.jpg" position="Cinematographer"/>
+          <AvatarCard name="Christian Herman" image ="./christian.jpg" position="Creative Director"/>
+          <AvatarCard name="Chris Risnear" image ="./chris.jpg" position="Screenplay Director"/>
+          <AvatarCard name="J.T. Kazousky" image ="./jt.jpg" position="Design Specialist"/>
+          <AvatarCard name="Kevin Lee" image ="./kevin.jpg" position="Composer"/>
         </div>
     </div>
   )
