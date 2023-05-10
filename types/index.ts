@@ -1,6 +1,17 @@
 export interface FieldProps {
   title: string;
-  thumbnail: string;
+  thumbnail: {
+    metadata: Object;
+    fields: {
+      description: string;
+      file: {
+        url: string;
+        fileName: string;
+      };
+      title: string;
+    }
+    sys: Array<object>;
+  };
   description: string;
   releaseData: string;
   url: string;

@@ -13,6 +13,7 @@ const Home = ({ films }:PropType) => {
   useEffect(() => {
     if(films !== undefined){
       setNewFilms(films.slice(0,3))
+      console.log(films)
     }
   }, [films])
 
@@ -45,15 +46,11 @@ const Home = ({ films }:PropType) => {
             );
           }}
           className={styles.carousel}>
-          <div>
-            <img src="/thumbnails/insideTheTent.png" />
-          </div>
-          <div>
-            <img src="/thumbnails/pigs.jpg" />
-          </div>
-          <div>
-            <img src="/thumbnails/confinement.jpg" />
-          </div>
+          {films.slice(0,3).map((film) => (
+            <div key={film.fields.title}>
+              <img src={film.fields.thumbnail.fields.file.url} alt="thumbnail" />
+            </div>
+          ))}
         </Carousel>
       </div>
       <div className={styles.releaseHero}>
