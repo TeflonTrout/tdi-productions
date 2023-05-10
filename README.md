@@ -1,38 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TDI Productions
 
-## Getting Started
+[TDI Productions](https://www.youtube.com/@tdiproductions3181) is a video production team that creates high-quality short films for YouTube. Our team specializes in horror and thriller genres, and we pride ourselves on delivering engaging and thought-provoking content to our viewers.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This landing page is built using Next.js, TypeScript, CSS, and ContentfulCMS. The following features are included:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- Responsive design: The landing page is designed to be fully responsive and looks great on all devices, from desktop computers to mobile phones.
+- Dynamic content: The landing page is powered by ContentfulCMS, which allows us to easily manage and update the content on the page.
+- Engaging visuals: The landing page features high-quality images and videos that showcase our team's skills and work.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+##Live Demo
+The landing page is hosted on Vercel and can be accessed at https://tdi-productions.vercel.app/.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
+##Usage
+This repository is intended for viewing the code and understanding the technologies used to build the TDI Productions landing page. The code is not intended for reuse or forking.
 
-## Learn More
+---
+##Issues/Bugs
+If you encounter any issues or bugs while viewing the landing page, please let us know by submitting an issue to this repository. Before submitting an issue, please check to see if it has already been reported by searching through the existing issues. When submitting a new issue, please include as much detail as possible, including steps to reproduce the issue and any error messages you may have encountered.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the [MIT License](LICENSE.md).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Thanks for checking out our TDI Productions landing page repository! If you have any questions or feedback, please don't hesitate to reach out to our team.
