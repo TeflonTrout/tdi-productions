@@ -2,14 +2,7 @@ export interface FieldProps {
   title: string;
   thumbnail: {
     metadata: Object;
-    fields: {
-      description: string;
-      file: {
-        url: string;
-        fileName: string;
-      };
-      title: string;
-    };
+    fields: FilmThumbnailProp;
     sys: Array<object>;
   };
   description: string;
@@ -27,4 +20,13 @@ export interface FilmProp {
   metadata: Object;
   sys: Array<object>;
   fields: FieldProps;
+}
+
+export interface FilmThumbnailProp {
+  description: string;
+  title: string;
+  file: {
+    url: string;
+    fileName: string;
+  }
 }
