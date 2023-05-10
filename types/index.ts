@@ -9,7 +9,7 @@ export interface FieldProps {
         fileName: string;
       };
       title: string;
-    }
+    };
     sys: Array<object>;
   };
   description: string;
