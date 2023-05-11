@@ -27,9 +27,9 @@
     display: grid;
     width: 90%;
     justify-items: center;
-    justify-content: space-evenly;
-    gap: 50px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 10px));
+    justify-content: center;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 200px));
 }
 
 .hero {
