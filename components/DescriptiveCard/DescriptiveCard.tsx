@@ -3,8 +3,7 @@ import styles from "./DescriptiveCard.module.css"
 import Link from 'next/link'
 import { Button } from '../index'
 import Moment from "react-moment"
-import { DescriptiveCardProps } from '@/types/descriptiveCard'
-import { FieldProps, PropType } from '@/types'
+import { FieldProps } from '@/types'
 
 const DescriptiveCard = (props:FieldProps) => {
   return (
