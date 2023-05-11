@@ -2,7 +2,7 @@ export interface FieldProps {
   title: string;
   thumbnail: {
     metadata: Object;
-    fields: Thumbnail;
+    fields: ThumbnailFields;
     sys: Array<object>;
   };
   description: string;
@@ -22,13 +22,7 @@ export interface FilmProp {
   fields: FieldProps;
 }
 
-export interface Thumbnail {
-  metadata: Object;
-  sys: Array<object>;
-  fields: Fields;
-}
-
-export interface Fields {
+export interface ThumbnailFields {
   title: string
   description: string
   file: File

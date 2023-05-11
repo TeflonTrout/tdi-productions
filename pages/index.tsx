@@ -11,9 +11,9 @@ const Home = ({ films }:PropType) => {
   const [newFilms, setNewFilms] = useState<Array<any>>([]);
   
   useEffect(() => {
+    // If films is not undefined slice off the 3 newest films
     if(films !== undefined){
       setNewFilms(films.slice(0,3))
-      console.log(films)
     }
   }, [films])
 

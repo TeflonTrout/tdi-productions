@@ -22,7 +22,7 @@ const Films = ({ films }:PropType) => {
                 key={film.fields.slug}
                 title={film.fields.title} 
                 description={film.fields.description}
-                thumbnail={film.fields.thumbnail.fields.file.url}
+                thumbnail={film.fields.thumbnail}
                 url={film.fields.url}
                 genres={film.fields.genres}
                 releaseData={film.fields.releaseDate}
