@@ -2,7 +2,7 @@ export interface FieldProps {
   title: string;
   thumbnail: {
     metadata: Object;
-    fields: FilmThumbnailProp;
+    fields: Thumbnail;
     sys: Array<object>;
   };
   description: string;
@@ -22,11 +22,31 @@ export interface FilmProp {
   fields: FieldProps;
 }
 
-export interface FilmThumbnailProp {
-  description: string;
-  title: string;
-  file: {
-    url: string;
-    fileName: string;
-  }
+export interface Thumbnail {
+  metadata: Object;
+  sys: Array<object>;
+  fields: Fields;
+}
+
+export interface Fields {
+  title: string
+  description: string
+  file: File
+}
+
+export interface File {
+  url: string
+  details: Details
+  fileName: string
+  contentType: string
+}
+
+export interface Details {
+  size: number
+  image: Image
+}
+
+export interface Image {
+  width: number
+  height: number
 }
