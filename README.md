@@ -14,15 +14,15 @@ This landing page is built using Next.js, TypeScript, CSS, and ContentfulCMS. Th
 
 ---
 
-##Live Demo
+## Live Demo
 The landing page is hosted on Vercel and can be accessed at https://tdi-productions.vercel.app/.
 
 ---
-##Usage
+## Usage
 This repository is intended for viewing the code and understanding the technologies used to build the TDI Productions landing page. The code is not intended for reuse or forking.
 
 ---
-##Issues/Bugs
+## Issues/Bugs
 If you encounter any issues or bugs while viewing the landing page, please let us know by submitting an issue to this repository. Before submitting an issue, please check to see if it has already been reported by searching through the existing issues. When submitting a new issue, please include as much detail as possible, including steps to reproduce the issue and any error messages you may have encountered.
 
 ## License
