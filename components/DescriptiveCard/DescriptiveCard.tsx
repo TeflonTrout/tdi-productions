@@ -1,15 +1,15 @@
 import React from 'react'
 import styles from "./DescriptiveCard.module.css"
-import { FieldProps } from '@/types'
 import Link from 'next/link'
 import { Button } from '../index'
 import Moment from "react-moment"
+import { FieldProps } from '@/types'
 
 const DescriptiveCard = (props:FieldProps) => {
   return (
     <div className={styles.card}>
         <div className={styles.imgContainer}>
-            <img src={props.thumbnail} alt="thumbnail" />
+            <img src={props.thumbnail.fields.file.url} alt="thumbnail" />
         </div>
         <div className={styles.infoBox}>
           <h1>{props.title}</h1>
