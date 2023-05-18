@@ -11,9 +11,16 @@ const Footer = () => {
       <div className={styles.logoContainer}>
         <img src="/tdiLogo.png" alt="tdi production" width="150px"/>
         <div className={styles.socials}>
-          <FontAwesomeIcon className={styles.icon} size="xs" icon={faYoutube}  />
-          <FontAwesomeIcon className={styles.icon} size="xs" icon={faInstagram} />
-          <FontAwesomeIcon className={styles.icon} size="xs" icon={faTiktok} />
+        <a href="https://www.youtube.com/@tdiproductions3181" target="_blank" rel="noreferrer noopener"> 
+          <FontAwesomeIcon className={styles.icon} size="xs" icon={faYoutube}></FontAwesomeIcon>
+        </a>
+        <a href="https://www.instagram.com/20dollarinsuranceproductions/" target="_blank" rel="noreferrer noopener"> 
+          <FontAwesomeIcon className={styles.icon} size="xl" icon={faInstagram} />
+        </a>
+        <a href="https://www.tiktok.com/@20dollarinsurance" target="_blank" rel="noreferrer noopener"> 
+          <FontAwesomeIcon className={styles.icon} size="xl" icon={faTiktok} />
+        </a>
+  
         </div>
       </div>
       <div className={styles.linkContainer}>
@@ -26,10 +33,10 @@ const Footer = () => {
       </div>
       <div className={styles.linkContainer}>
         <ul>
-          <li>YouTube</li>
-          <li>Twitter</li>
-          <li>TikTok</li>
-          <li>Instagram</li>
+          <a href="https://www.youtube.com/@tdiproductions3181" target="_blank" rel="noreferrer noopener"> <li>YouTube </li></a>
+          <a href="https://twitter.com/TDI_Productions" target="_blank" rel="noreferrer noopener"> <li>Twitter </li></a>
+          <a href="https://www.tiktok.com/@20dollarinsurance" target="_blank" rel="noreferrer noopener"> <li>TikTok </li></a>
+          <a href="https://www.instagram.com/20dollarinsuranceproductions/" target="_blank" rel="noreferrer noopener"> <li>Instagram </li></a>
         </ul>
       </div>
     </div>

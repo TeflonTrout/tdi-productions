@@ -33,7 +33,12 @@
 .footer .socials .icon {
     cursor: pointer;
     transition: .15s ease-in-out;
-    width: 15%;
+    width: 50px;
+}
+
+.footer .socials a {
+    display: flex;
+    justify-content: center;
 }
 
 .footer .socials .icon:hover path {
