@@ -6,9 +6,12 @@ import { getFilms } from '@/utils/utils'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Link from 'next/link'
 import { PropType } from '@/types'
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 const Home = ({ films }:PropType) => {
   const [newFilms, setNewFilms] = useState<Array<any>>([]);
+  const [imagesLoaded, setImagesLoaded] = useState<boolean>(false);
   
   useEffect(() => {
     // If films is not undefined slice off the 3 newest films
@@ -48,7 +51,11 @@ const Home = ({ films }:PropType) => {
           className={styles.carousel}>
           {films.slice(0,3).map((film) => (
             <div key={film.fields.title}>
-              <img src={film.fields.thumbnail.fields.file.url} alt="thumbnail" />
+              {imagesLoaded ? null
+                :<div style={{width: '99vw', display: 'flex', justifyContent: "center", marginTop: "50px"}} >
+                  <Skeleton className={styles.skeletonImg} width="99vw" height="92vh"/>
+                </div>}
+              <img src={film.fields.thumbnail.fields.file.url} alt="thumbnail" onLoad={() => setImagesLoaded(true)}/>
             </div>
           ))}
         </Carousel>

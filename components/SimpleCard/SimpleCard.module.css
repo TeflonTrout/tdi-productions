@@ -21,6 +21,11 @@
     cursor: pointer;
 }
 
+.card .imgSkeleton {
+    border-radius: 10px 10px 0px 0px;
+    object-fit: contain;
+}
+
 .card h1 {
     cursor: pointer;
 

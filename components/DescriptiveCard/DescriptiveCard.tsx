@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from "./DescriptiveCard.module.css"
 import Link from 'next/link'
 import { Button } from '../index'
 import Moment from "react-moment"
 import { FieldProps } from '@/types'
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
+
 
 const DescriptiveCard = (props:FieldProps) => {
+  const [imgLoaded, setImgLoaded] = useState<boolean>(false);
+
   return (
     <div className={styles.card}>
         <div className={styles.imgContainer}>
-            <img src={props.thumbnail.fields.file.url} alt="thumbnail" />
+          {imgLoaded ? null : <Skeleton className={styles.skeletonImg} />}
+          <img src={props.thumbnail.fields.file.url} alt="thumbnail" onLoad={() => setImgLoaded(true)}/>
         </div>
         <div className={styles.infoBox}>
           <h1>{props.title}</h1>

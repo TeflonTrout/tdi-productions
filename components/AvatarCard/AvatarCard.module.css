@@ -30,6 +30,16 @@
     filter: none;
 }
 
+.photoCard .skeletonImg {
+    width: 250px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-bottom: 5px;
+    border-radius: 10px 10px 0 0;
+    transition: 0.15s ease-in;
+    left: -13px;
+}
+
 .photoCard .infoBox {
     display: flex;
     flex-direction: column;
