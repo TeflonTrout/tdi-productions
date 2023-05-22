@@ -51,10 +51,10 @@ const Home = ({ films }:PropType) => {
           className={styles.carousel}>
           {films.slice(0,3).map((film) => (
             <div key={film.fields.title}>
-              {imagesLoaded ? 
-               <div style={{width: '99vw', display: 'flex', justifyContent: "center", marginTop: "50px"}} >
-                <Skeleton className={styles.skeletonImg} width="99vw" height="92vh"/>
-              </div> : null}
+              {imagesLoaded ? null
+                :<div style={{width: '99vw', display: 'flex', justifyContent: "center", marginTop: "50px"}} >
+                  <Skeleton className={styles.skeletonImg} width="99vw" height="92vh"/>
+                </div>}
               <img src={film.fields.thumbnail.fields.file.url} alt="thumbnail" onLoad={() => setImagesLoaded(true)}/>
             </div>
           ))}
